@@ -1,0 +1,1413 @@
+<!-------------------------------------- DOCTYPE html ----------------------------->
+<html>
+	<head>
+		<title id="name"></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+		<link href="lib/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="lib/style.css"/>
+		
+		
+		<link rel="preload" href="_next/static/css/1a42dd2c30a1fb5a.css" as="style" />
+		<link rel="stylesheet" href="_next/static/css/1a42dd2c30a1fb5a.css" data-n-g="" />
+		<link rel="preload" href="_next/static/css/d8ee72edbda00946.css" as="style" />
+		<link rel="stylesheet" href="_next/static/css/d8ee72edbda00946.css" data-n-p="" />
+		<noscript data-n-css=""></noscript>
+		
+		<link rel="stylesheet" href="lib/style.css"/>
+		<script defer="" nomodule="" src="_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+		<script src="_next/static/chunks/webpack-24fe9f593244c50c.js" defer=""></script>
+		<script src="_next/static/chunks/framework-3b5a00d5d7e8d93b.js" defer=""></script>
+		<script src="_next/static/chunks/main-f2e125da23ccdc4a.js" defer=""></script>
+		<script src="_next/static/chunks/pages/_app-ea729a6e0f7e14e2.js" defer=""></script>
+		<script src="_next/static/chunks/664-1b4479b4462ded63.js" defer=""></script>
+		<script src="_next/static/chunks/89-7c309325535f8065.js" defer=""></script>
+		<script src="_next/static/chunks/369-ade98e1809543177.js" defer=""></script>
+		<script src="_next/static/chunks/122-fc9cda1ecf3f45d0.js" defer=""></script>
+		<script src="_next/static/chunks/4-8c3aef34e03f738c.js" defer=""></script>
+		<script src="_next/static/chunks/282-b3fe4c9d46ee20f4.js" defer=""></script>
+		<script src="_next/static/chunks/610-788a315515fbda2f.js" defer=""></script>
+		<script src="_next/static/chunks/pages/index-e63c12a5c66cb686.js" defer=""></script>
+			
+		<!-----------
+		<link rel="stylesheet" href="lib/bootstrap-select-country-4.1.0/dist/css/bootstrap-select-country.min.css" />
+		------>
+		<link rel="icon" href="images/logo.png"/>
+		
+		
+	
+		<script type="text/javascript">
+	
+			function load(id,file,q){
+				
+				var xmlHttpRequest;
+				if(window.XMLHttpRequest){
+					xmlHttpRequest = new XMLHttpRequest();
+				}else{
+					xmlHttpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				
+				xmlHttpRequest.onreadystatechange = function(){
+					if(xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200){
+						document.getElementById(id).innerHTML = xmlHttpRequest.responseText;
+					}
+				}
+				
+				xmlHttpRequest.open("GET",file+'?q='+q,true);
+				xmlHttpRequest.send();
+			}
+		
+		
+		</script>
+	
+	</head>
+	
+	<!--------------------------------END----------------------->
+	<!------------------------------------------------------->
+	<!--------------------------------start----------------------->
+	
+	<body>
+		<!----------- This is the fading / loading intro---------->
+		<div class="intro"><div id="intro_count" class=""><b><span id="count_text" class="count">100</span></b></div></div>
+		
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#"><img src="images/logo.svg" alt="DevBabu.com"></a>
+				</div>
+				<div class="navbar">
+					<div class="close-nav"><button>×</button></div>
+					<nav class="nav nav-tabs justify-content-center">
+						<div class="nav-item dropdown">
+							<a href="#" class=" nave-item nav-link dropdown-toggle active" data-bs-toggle="dropdown">Home</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Inbox</a>
+								<a href="#" class="dropdown-item">Sent</a>
+								<a href="#" class="dropdown-item">Drafts</a>
+							</div>
+						</div>
+						
+						<a href="#" class="nav-item nav-link">About</a>
+						
+						<div class="nav-item dropdown">
+							<a href="#" class=" nave-item nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Inbox</a>
+								<a href="#" class="dropdown-item">Sent</a>
+								<a href="#" class="dropdown-item">Drafts</a>
+							</div>
+						</div>
+						
+						<div class="nav-item dropdown">
+							<a href="#" class=" nave-item nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Inbox</a>
+								<a href="#" class="dropdown-item">Sent</a>
+								<a href="#" class="dropdown-item">Drafts</a>
+							</div>
+						</div>
+						
+						<div class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Inbox</a>
+								<a href="#" class="dropdown-item">Sent</a>
+								<a href="#" class="dropdown-item">Drafts</a>
+							</div>
+						</div>
+						
+						<a href="#" class="nav-item nav-link">Contact</a>
+						
+						<span class="btn btn-md btn-warning res" style="float:right; border-radius:30px; color:#fff;">Find Reservation</span>
+						
+					</nav>
+				</div>
+				<div class="menu-bar">
+					<button><i></i></button>
+				</div>
+			</div>
+		</header>
+    
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        function bodyScroll(){
+            if(Navbar.classList.contains('show')){
+                theBody.classList.add('hide-scroll');
+            }
+            else if(theBody.classList.contains('hide-scroll')){
+                theBody.classList.remove('hide-scroll');
+            }
+        }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+		
+		
+		
+		<div class="banner-section2">
+            <div class="banner-vector"><img class="pagination-bg" src="images/icon/h2-slider-paginatin-bg.svg"
+                    alt="" /><img class="rect-shape1" src="images/icon/h2-banner-rect-shape.svg" alt="" /><img
+                    class="rect-shape2" src="images/icon/h2-banner-rect-shape.svg" alt="" /><img class="circle"
+                    src="images/icon/h2-banner-circle.svg" alt="" /></div>
+            <div class="swiper banner2-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                        <div class="banner-wrapper d-flex align-items-center justify-content-between">
+                            <div class="banner-content"><span><img class="left-vec"
+                                        src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Welcome To
+                                    Restho<img class="right-vec" src="images/icon/sub-title-vec.svg"
+                                        alt="sub-title-vec" /></span>
+                                <h1>Find Your Best Healthy &amp; Tasty Food.</h1>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p><a class="primary-btn5 btn-md2" href="/about"><i
+                                        class="bi bi-arrow-up-right-circle"></i>Discover More</a>
+                            </div>
+                            <div class="banner-right"><img class="img-fluid h2-banner-img1"
+                                    src="images/bg/h2-banner-img111.png" alt="h2-banner-img1" /><img
+                                    class="img-fluid h2-banner-img3" src="images/bg/h2-banner-img333.png"
+                                    alt="h2-banner-img3" /><img class="img-fluid h2-banner-img2"
+                                    src="images/bg/h2-banner-img222.png" alt="h2-banner-img2" /><img
+                                    class="img-fluid h2-banner-img4" src="images/bg/h2-banner-img444.png"
+                                    alt="h2-banner-img4" /></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="0">
+                        <div class="banner-wrapper d-flex align-items-center justify-content-between">
+                            <div class="banner-content"><span><img class="left-vec"
+                                        src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Welcome To
+                                    Restho<img class="right-vec" src="images/icon/sub-title-vec.svg"
+                                        alt="sub-title-vec" /></span>
+                                <h1>Find Your Best Healthy &amp; Tasty Food.</h1>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p><a class="primary-btn5 btn-md2" href="/about"><i
+                                        class="bi bi-arrow-up-right-circle"></i>Discover More</a>
+                            </div>
+                            <div class="banner-right"><img class="img-fluid h2-banner-img1"
+                                    src="images/bg/h2-banner-img1.png" alt="h2-banner-img1" /><img
+                                    class="img-fluid h2-banner-img3" src="images/bg/h2-banner-img3.png"
+                                    alt="h2-banner-img3" /><img class="img-fluid h2-banner-img2"
+                                    src="images/bg/h2-banner-img2.png" alt="h2-banner-img2" /><img
+                                    class="img-fluid h2-banner-img4" src="images/bg/h2-banner-img4.png"
+                                    alt="h2-banner-img4" /></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="1">
+                        <div class="banner-wrapper d-flex align-items-center justify-content-between">
+                            <div class="banner-content"><span><img class="left-vec"
+                                        src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Welcome To
+                                    Restho<img class="right-vec" src="images/icon/sub-title-vec.svg"
+                                        alt="sub-title-vec" /></span>
+                                <h1>Find Your Best Healthy &amp; Tasty Food.</h1>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p><a class="primary-btn5 btn-md2" href="/about"><i
+                                        class="bi bi-arrow-up-right-circle"></i>Discover More</a>
+                            </div>
+                            <div class="banner-right"><img class="img-fluid h2-banner-img1"
+                                    src="images/bg/h2-banner-img11.png" alt="h2-banner-img1" /><img
+                                    class="img-fluid h2-banner-img3" src="images/bg/h2-banner-img33.png"
+                                    alt="h2-banner-img3" /><img class="img-fluid h2-banner-img2"
+                                    src="images/bg/h2-banner-img22.png" alt="h2-banner-img2" /><img
+                                    class="img-fluid h2-banner-img4" src="images/bg/h2-banner-img44.png"
+                                    alt="h2-banner-img4" /></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2">
+                        <div class="banner-wrapper d-flex align-items-center justify-content-between">
+                            <div class="banner-content"><span><img class="left-vec"
+                                        src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Welcome To
+                                    Restho<img class="right-vec" src="images/icon/sub-title-vec.svg"
+                                        alt="sub-title-vec" /></span>
+                                <h1>Find Your Best Healthy &amp; Tasty Food.</h1>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p><a class="primary-btn5 btn-md2" href="/about"><i
+                                        class="bi bi-arrow-up-right-circle"></i>Discover More</a>
+                            </div>
+                            <div class="banner-right"><img class="img-fluid h2-banner-img1"
+                                    src="images/bg/h2-banner-img111.png" alt="h2-banner-img1" /><img
+                                    class="img-fluid h2-banner-img3" src="images/bg/h2-banner-img333.png"
+                                    alt="h2-banner-img3" /><img class="img-fluid h2-banner-img2"
+                                    src="images/bg/h2-banner-img222.png" alt="h2-banner-img2" /><img
+                                    class="img-fluid h2-banner-img4" src="images/bg/h2-banner-img444.png"
+                                    alt="h2-banner-img4" /></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                        <div class="banner-wrapper d-flex align-items-center justify-content-between">
+                            <div class="banner-content"><span><img class="left-vec"
+                                        src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Welcome To
+                                    Restho<img class="right-vec" src="images/icon/sub-title-vec.svg"
+                                        alt="sub-title-vec" /></span>
+                                <h1>Find Your Best Healthy &amp; Tasty Food.</h1>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page.</p><a class="primary-btn5 btn-md2" href="/about"><i
+                                        class="bi bi-arrow-up-right-circle"></i>Discover More</a>
+                            </div>
+                            <div class="banner-right"><img class="img-fluid h2-banner-img1"
+                                    src="images/bg/h2-banner-img1.png" alt="h2-banner-img1" /><img
+                                    class="img-fluid h2-banner-img3" src="images/bg/h2-banner-img3.png"
+                                    alt="h2-banner-img3" /><img class="img-fluid h2-banner-img2"
+                                    src="images/bg/h2-banner-img2.png" alt="h2-banner-img2" /><img
+                                    class="img-fluid h2-banner-img4" src="images/bg/h2-banner-img4.png"
+                                    alt="h2-banner-img4" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination-g"></div>
+            </div>
+        </div>
+        <div class="h2-product-area pt-120 pb-120">
+            <div class="swiper h2-product-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h3-intro-sm.png"
+                                    alt="h2-product-1" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Sea Food</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h3-intro-sm.png"
+                                    alt="h2-product-2" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Meat Masala</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h3-menu-food-1.png"
+                                    alt="h2-product-3" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Vegetarian</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h3-special-02.png"
+                                    alt="h2-product-4" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Thai Soup</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-1.png"
+                                    alt="h2-product-1" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Sea Food</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-2.png"
+                                    alt="h2-product-2" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Meat Masala</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-3.png"
+                                    alt="h2-product-3" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Vegetarian</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-4.png"
+                                    alt="h2-product-4" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Thai Soup</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="0">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-1.png"
+                                    alt="h2-product-1" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Sea Food</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="1">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-2.png"
+                                    alt="h2-product-2" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Meat Masala</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-3.png"
+                                    alt="h2-product-3" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Vegetarian</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-4.png"
+                                    alt="h2-product-4" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Thai Soup</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="4">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-1.png"
+                                    alt="h2-product-1" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Sea Food</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="5">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-2.png"
+                                    alt="h2-product-2" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Meat Masala</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="6">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-3.png"
+                                    alt="h2-product-3" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Vegetarian</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="7">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-4.png"
+                                    alt="h2-product-4" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Thai Soup</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-1.png"
+                                    alt="h2-product-1" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Sea Food</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-2.png"
+                                    alt="h2-product-2" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Meat Masala</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-3.png"
+                                    alt="h2-product-3" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Vegetarian</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-4.png"
+                                    alt="h2-product-4" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Thai Soup</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-1.png"
+                                    alt="h2-product-1" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Sea Food</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-2.png"
+                                    alt="h2-product-2" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Meat Masala</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-3.png"
+                                    alt="h2-product-3" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Vegetarian</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7">
+                        <div class="product-wrap">
+                            <div class="product-img"><img class="img-fluid" src="images/bg/h2-product-4.png"
+                                    alt="h2-product-4" /></div>
+                            <div class="product-content">
+                                <h4><a href="/category">Thai Soup</a></h4>
+                                <p>Lorem ipsum dolor sit amet consectet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2-about-area pb-120">
+            <div class="about-left2"><img class="img-fluid" src="images/bg/h2-about-img-full.png"
+                    alt="h2-about-img-full" /></div>
+            <div class="about-left"><img class="img-fluid h2-about-img1" src="images/bg/h2-about-img1.png"
+                    alt="h2-about-img1" /><img class="img-fluid h2-about-img3" src="images/bg/h2-about-img3.png"
+                    alt="h2-about-img3" /><img class="img-fluid h2-about-img2" src="images/bg/h2-about-img2.png"
+                    alt="h2-about-img2" /><img class="img-fluid h2-about-img4" src="images/bg/h2-about-img4.png"
+                    alt="h2-about-img4" /></div>
+            <div class="about-right">
+                <div class="section-title"><span><img class="left-vec" src="images/icon/sub-title-vec.svg"
+                            alt="sub-title-vec" />About to Restho<img class="right-vec"
+                            src="images/icon/sub-title-vec.svg" alt="sub-title-vec" /></span>
+                    <h2>Come to Our Restaurant, Ready Your Food.</h2>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="about-featurs">
+                    <ul>
+                        <li>
+                            <div class="features-img"><img src="images/icon/h2-about1.svg" alt="" /></div>
+                            <div class="features-content">
+                                <h4>Pure Fresh Food.</h4>
+                                <p>We are serve different type of fresh food.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="features-img"><img src="images/icon/h2-about2.svg" alt="" /></div>
+                            <div class="features-content">
+                                <h4>Experties Chef.</h4>
+                                <p>We are serve different type of fresh food.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><a class="primary-btn5 btn-md2" href="/about"><i class="bi bi-arrow-up-right-circle"></i>Discover
+                    More</a>
+            </div>
+        </div>
+        <div class="h2-reguler-item mb-120">
+            <div class="container">
+                <div class="row d-flex justify-content-center mb-40">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center"><span><img class="left-vec"
+                                    src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Our New Item<img
+                                    class="right-vec" src="images/icon/sub-title-vec.svg"
+                                    alt="sub-title-vec" /></span>
+                            <h2>Restho New Item List</h2>
+                            <p>Various versions have evolved over the years, sometimes on purpose.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-relative">
+                    <div class="swiper h2-reguler-items-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items11.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Prawn Fried</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items12.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Prawn with Noodles</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items13.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Soup with Egg</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="0">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items11.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Prawn Fried</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="1">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items12.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Prawn with Noodles</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="2">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items13.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Soup with Egg</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items11.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Prawn Fried</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items12.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Prawn with Noodles</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                                <div class="reguler-items-wrap">
+                                    <div class="item-img"><img class="img-fluid"
+                                            src="images/bg/h2-regular-items13.png" alt="" />
+                                        <div class="price">
+                                            <h5>$32</h5>
+                                        </div>
+                                    </div>
+                                    <div class="reguler-items-content">
+                                        <h3><a href="/shop-details">Soup with Egg</a></h3>
+                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn">
+                        <div class="prev-btn-3" style="cursor:pointer"><i class="bi bi-arrow-left-short"></i></div>
+                        <div class="next-btn-3" style="cursor:pointer"><i class="bi bi-arrow-right-short"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home2-food-items mb-120">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center mb-40 g-3">
+                    <div class="col-lg-8">
+                        <div class="section-title"><span><img class="left-vec"
+                                    src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Menu List<img
+                                    class="right-vec" src="images/icon/sub-title-vec.svg"
+                                    alt="sub-title-vec" /></span>
+                            <h2>Find Your Food Item</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mb-sm-25">
+                        <div class="primary-btn5 btn-md2" style="color:#000;cursor:pointer"><i
+                                class="bi bi-arrow-up-right-circle"></i>View More</div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="food-items2-wrap">
+                            <div class="food-img"><img class="img-fluid" src="images/bg/h2-food-item-1.png"
+                                    alt="h2-food-item-1" />
+                                <div class="batch"><a>Lanch</a></div>
+                                <div class="pric-tag"><span>$<!-- -->45</span></div>
+                            </div>
+                            <div class="food-content">
+                                <h3><a href="/shop-details">Prawn with Noodles</a></h3>
+                                <p>It is a long established fact that a reader will be distracted.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="food-items2-wrap">
+                            <div class="food-img"><img class="img-fluid" src="images/bg/h2-food-item-2.png"
+                                    alt="h2-food-item-1" />
+                                <div class="batch"><a>Lanch</a></div>
+                                <div class="pric-tag"><span>$<!-- -->45</span></div>
+                            </div>
+                            <div class="food-content">
+                                <h3><a href="/shop-details">Chicken Leg Fry</a></h3>
+                                <p>It is a long established fact that a reader will be distracted.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="food-items2-wrap">
+                            <div class="food-img"><img class="img-fluid" src="images/bg/h2-food-item-3.png"
+                                    alt="h2-food-item-1" />
+                                <div class="batch"><a>Lanch</a></div>
+                                <div class="pric-tag"><span>$<!-- -->45</span></div>
+                            </div>
+                            <div class="food-content">
+                                <h3><a href="/shop-details">Golden Coffee</a></h3>
+                                <p>It is a long established fact that a reader will be distracted.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="food-items2-wrap">
+                            <div class="food-img"><img class="img-fluid" src="images/bg/h2-food-item-4.png"
+                                    alt="h2-food-item-1" />
+                                <div class="batch"><a>Lanch</a></div>
+                                <div class="pric-tag"><span>$<!-- -->45</span></div>
+                            </div>
+                            <div class="food-content">
+                                <h3><a href="/shop-details">Full Chicken</a></h3>
+                                <p>It is a long established fact that a reader will be distracted.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="food-items2-wrap">
+                            <div class="food-img"><img class="img-fluid" src="images/bg/h2-food-item-5.png"
+                                    alt="h2-food-item-1" />
+                                <div class="batch"><a>Lanch</a></div>
+                                <div class="pric-tag"><span>$<!-- -->45</span></div>
+                            </div>
+                            <div class="food-content">
+                                <h3><a href="/shop-details">Mutton Kabab</a></h3>
+                                <p>It is a long established fact that a reader will be distracted.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="food-items2-wrap">
+                            <div class="food-img"><img class="img-fluid" src="images/bg/h2-food-item-6.png"
+                                    alt="h2-food-item-1" />
+                                <div class="batch"><a>Lanch</a></div>
+                                <div class="pric-tag"><span>$<!-- -->45</span></div>
+                            </div>
+                            <div class="food-content">
+                                <h3><a href="/shop-details">Burger with Drinks</a></h3>
+                                <p>It is a long established fact that a reader will be distracted.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2-special-gallery mb-120">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center mb-40">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center"><span><img class="left-vec"
+                                    src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Gallery Store<img
+                                    class="right-vec" src="images/icon/sub-title-vec.svg"
+                                    alt="sub-title-vec" /></span>
+                            <h2>Our Special Gallery</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper h2-gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-01.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-03.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-04.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-05.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-06.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-05.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="9">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-03.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="10">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-06.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="11">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-01.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="0">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-01.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="1">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-03.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-04.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="4">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-05.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="5">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-06.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="6">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="7">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-05.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="8">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="9">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-03.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="10">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-06.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="11">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-01.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-01.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-03.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-04.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-05.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-06.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-05.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-02.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="9">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-03.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="10">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-06.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="11">
+                        <div class="gallery-img"><img class="img-fluid" src="images/bg/2col-gallery-01.png"
+                                alt="" />
+                            <div class="overlay"><img src="images/icon/Zoom.svg" style="cursor:pointer" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2-best-chef mb-120">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center mb-40">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center"><span><img class="left-vec"
+                                    src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Our Experties<img
+                                    class="right-vec" src="images/icon/sub-title-vec.svg"
+                                    alt="sub-title-vec" /></span>
+                            <h2>Restho&#x27;s Best Chef</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="best-chef-wrap">
+                            <div class="chef-img"><img class="img-fluid" src="images/bg/chef-kitchen1.png"
+                                    alt="chef-kitchen1" /></div>
+                            <div class="Chef-content text-center">
+                                <h3><a href="/chef-details">Mr. Willium Jhon</a></h3>
+                                <p>Chef of Head</p>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://www.pinterest.com/"><i class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="best-chef-wrap">
+                            <div class="chef-img"><img class="img-fluid" src="images/bg/chef-kitchen2.png"
+                                    alt="chef-kitchen1" /></div>
+                            <div class="Chef-content text-center">
+                                <h3><a href="/chef-details">Mile Woatson </a></h3>
+                                <p>Chef of Head</p>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://www.pinterest.com/"><i class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div class="best-chef-wrap">
+                            <div class="chef-img"><img class="img-fluid" src="images/bg/chef-kitchen3.png"
+                                    alt="chef-kitchen1" /></div>
+                            <div class="Chef-content text-center">
+                                <h3><a href="/chef-details">Mr. Robert Jhon</a></h3>
+                                <p>Chef of Head</p>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="bx bxl-instagram-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://www.pinterest.com/"><i class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h2-reservarion-area mb-120">
+            <div class="bg-vector"><img class="img-fluid" src="images/bg/h2-reservation-1.png" alt="" /></div>
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center mb-40">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center"><span><img class="left-vec"
+                                    src="images/icon/sub-title-vec.svg" alt="sub-title-vec" />Online Reserve<img
+                                    class="right-vec" src="images/icon/sub-title-vec.svg"
+                                    alt="sub-title-vec" /></span>
+                            <h2>For Online Reservation</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <form>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-6 mb-25">
+                                    <div class="form-inner"><input type="text" placeholder="Name*" /></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-25">
+                                    <div class="form-inner"><input type="text" placeholder="Phone*" /></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-25">
+                                    <div class="form-inner"><input type="text" placeholder="People" /></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-25">
+                                    <div class="form-inner date-icon">
+                                        <div class="react-datepicker-wrapper">
+                                            <div class="react-datepicker__input-container"><input type="text"
+                                                    placeholder="Check In" class="calendar" value="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-25">
+                                    <div class="form-inner"><select class="time-select">
+                                            <option value="time">08 : 00 am</option>
+                                            <option>09 : 00 am</option>
+                                            <option value="1">10 : 00 am</option>
+                                            <option value="2">11 : 00 am</option>
+                                            <option value="3">12 : 00 pm</option>
+                                            <option value="4">01 : 00 pm</option>
+                                            <option value="5">02 : 00 pm</option>
+                                            <option value="6">03 : 00 pm</option>
+                                            <option value="7">04 : 00 pm</option>
+                                            <option value="8">05 : 00 pm</option>
+                                            <option value="9">06 : 00 pm</option>
+                                            <option value="10">07 : 00 pm</option>
+                                            <option value="11">08 : 00 pm</option>
+                                            <option value="12">09 : 00 pm</option>
+                                            <option value="13">10 : 00 pm</option>
+                                        </select></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 sm-mb-25">
+                                    <div class="form-inner"><input type="email" placeholder="Email" /></div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-inner"><button type="submit">Reserve Now</button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	
+	
+	<!--------------------------------END----------------------->
+	<!------------------------------------------------------->
+	<!--------------------------------start----------------------->	
+		<section class="newsFeed">
+		  <div class="feedCont">
+			<div class="feedHdText">
+			  <img src="./Resources/footer-shape.svg" />
+			  <p>Recent News</p>
+			  <img src="./Resources/footer-shape.svg" />
+			</div>
+			<h1>Our Recent News</h1>
+			<div class="newsCon">
+			  <div class="newsList">
+				<!-- News 1 -->
+				<div class="news">
+				  <div class="newsImg">
+					<img src="./Resources/blog-1.png" class="imgs" />
+					<div class="date">
+					  <span>07 Aug, 2022</span>
+					</div>
+				  </div>
+				  <div class="newsInfo">
+					<div class="abtNews">
+					  <a href="#"> <img src="./Resources/User.svg" /> By Admin </a>
+					  <div class="dash"></div>
+					  <a href="#">
+						<img src="./Resources/Comment.svg" /> Comment(10)
+					  </a>
+					</div>
+					<div class="tagline">
+					  <a href="#" class="tagText"
+						>Eat Healthy Food & Get Your happiness</a
+					  >
+					</div>
+				  </div>
+				</div>
+				<!-- News 2 -->
+				<div class="news">
+				  <div class="newsImg">
+					<img src="./Resources/blog-2.png" class="imgs" />
+					<div class="date">
+					  <span>07 Aug, 2022</span>
+					</div>
+				  </div>
+				  <div class="newsInfo">
+					<div class="abtNews">
+					  <a href="#"> <img src="./Resources/User.svg" /> By Admin </a>
+					  <div class="dash"></div>
+					  <a href="#">
+						<img src="./Resources/Comment.svg" /> Comment(15)
+					  </a>
+					</div>
+					<div class="tagline">
+					  <a href="#" class="tagText"
+						>Cooking Delicious Food our Expertise Chef</a
+					  >
+					</div>
+				  </div>
+				</div>
+				<!-- News 3 -->
+				<div class="news">
+				  <div class="newsImg">
+					<img src="./Resources/blog-3.png" class="imgs" />
+					<div class="date">
+					  <span>07 Aug, 2022</span>
+					</div>
+				  </div>
+				  <div class="newsInfo">
+					<div class="abtNews">
+					  <a href="#"> <img src="./Resources/User.svg" /> By Admin </a>
+					  <div class="dash"></div>
+					  <a href="#">
+						<img src="./Resources/Comment.svg" /> Comment(15)
+					  </a>
+					</div>
+					<div class="tagline">
+					  <a href="#" class="tagText"
+						>To Serve Food Customer With Coffee</a
+					  >
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer>
+		  <img src="./Resources/Untitled design (12).jpg" class="background" />
+		  <div class="footerContainer">
+			<div class="pt1">
+			  <div class="facilitators">
+				<h1>Our Facilitators</h1>
+				<div class="facilCont">
+				  <div class="facilCont2">
+					<a href="" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Indian Menu</a
+					>
+					<a href="" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Menu Item</a
+					>
+					<a href="" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Menu Item</a
+					>
+					<a href="" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Italian Menu</a
+					>
+					<a href="" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Best Offer</a
+					>
+				  </div>
+				  <div class="facilCont2">
+					<a href="#" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Popular Item</a
+					>
+					<a href="#" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Regular Menu</a
+					>
+					<a href="#" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>New Food</a
+					>
+					<a href="#" class="facilTexts"
+					  ><span><div class="dash2 hidden"></div></span>Special Offer</a
+					>
+				  </div>
+				</div>
+			  </div>
+			  <div class="logoContact">
+				<div class="lgCont">
+				  <img
+					src="./Resources/header1-logo.svg"
+					class="stLogo"
+					alt="Site Logo"
+				  />
+				  <p>Established . 2022</p>
+				  <div class="lineShape">
+					<div class="line"></div>
+					<img src="./Resources/footer-shape.svg" />
+					<div class="line"></div>
+				  </div>
+				  <div class="socialIcons">
+					<div class="icon fb">
+					  <a href="#"><img src="./Resources/fb.png" /></a>
+					</div>
+					<div class="icon ig">
+					  <a href="#"><img src="./Resources/ig.png" /></a>
+					</div>
+
+					<div class="icon ln">
+					  <a href="#"><img src="./Resources/ln.png" /></a>
+					</div>
+					<div class="icon tw">
+					  <a href="#"><img src="./Resources/tw.png" /></a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="addressInfo">
+				<h1>Address Info</h1>
+				<div>
+				  <span>Phone:</span>
+				  <span><a href="#">+880-1776-766-767</a></span>
+				</div>
+				<div>
+				  <span>Email:</span>
+				  <span><a href="#">info@example.com</a></span>
+				</div>
+				<div>
+				  <span>Fax ID:</span>
+				  <span><a href="#">+99-75667-786</a></span>
+				</div>
+				<div>
+				  <span>Location:</span>
+				  <span
+					><a href="#"
+					  >Mirpur DOHS,House-167/170, Road-02 Avenue-01.</a
+					></span
+				  >
+				</div>
+			  </div>
+			</div>
+			<div class="pt2">
+			  <span>@Copyright by <a>Egensla</a>-2023, All Right Reserved.</span>
+			  <p>
+				<span><a href="#">Privacy & Policy</a></span> |
+				<span><a href="#">Terms and Conditions</a></span>
+			  </p>
+			</div>
+		  </div>
+		</footer>
+	
+		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="lib/script.js"></script>
+		<script src="lib/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!------
+		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="lib/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="lib/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/script.js"></script>
+		<script type="text/javascript" src="lib/bootstrap-select-country-4.1.0/dist/js/bootstrap-select-country.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap-select-country-4.1.0/src/bootstrap-select-country.js"></script>
+---->
+		
+	</body>
+</html>
